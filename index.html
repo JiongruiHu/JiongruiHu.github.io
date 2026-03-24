@@ -1,124 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic page setup -->
-    <meta charset="UTF-8">
-    <title>Jiongrui Hu - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiongrui Hu | Portfolio</title>
 
-    <!-- Internal CSS (styling inside the same file) -->
-    <style>
-        /* Reset default browser spacing */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
 
-        /* Body styling */
-        body {
-            font-family: Arial, Helvetica, sans-serif; /* Clean, readable font */
-            background-color: #f5f7fa; /* Light background */
-            color: #333; /* Dark text for readability */
-            line-height: 1.6;
-        }
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: #020617;
+    }
 
-        /* Main container to center content */
-        .container {
-            max-width: 800px;
-            margin: 50px auto; /* Center horizontally with space on top */
-            padding: 20px;
-        }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
 
-        /* Header (your name) */
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+    header p {
+      color: #38bdf8;
+      font-size: 1.2rem;
+    }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
 
-        /* Section styling */
-        section {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Soft shadow */
-        }
+    h2 {
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
 
-        section h2 {
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
+    .hero {
+    background: linear-gradient(135deg, #020617, #0f172a);
+    padding: 30px 20px;
+    text-align: center;
+    }
 
-        /* Skills list */
-        ul {
-            list-style-type: square; /* Square bullets */
-            padding-left: 20px;
-        }
+    .hero-content {
+    max-width: 800px;
+    margin: auto;
+    }
 
-        li {
-            margin-bottom: 5px;
-        }
+    .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    }
 
-        /* Project title */
-        .project-title {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-    </style>
+    .tagline {
+    color: #38bdf8;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    }
+
+    .subtitle {
+    color: #cbd5f5;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    }
+    .card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+
+    /* Improve readability */
+    color: #e2e8f0;
+    line-height: 1.6;
+    }
+
+    /* Title inside card */
+    .card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #38bdf8;
+    }
+
+    /* Paragraph text */
+    .card p {
+    margin: 6px 0;
+    color: #cbd5f5;
+    font-size: 0.95rem;
+    }
+
+    /* Hover effect */
+    .card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+    
+
+    .skills span {
+      display: inline-block;
+      background: #38bdf8;
+      color: #020617;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
 
-    <!-- Main container -->
-    <div class="container">
+    <header class="hero">
+    <div class="hero-content">
+        <h1>Jiongrui Hu</h1>
+        <p class="tagline">AI Engineer | Computer Vision | Deep Learning</p>
+        <p class="subtitle">
+        Building intelligent systems with machine learning and real-world applications.
+        </p>
+    </div>
+    </header>
 
-        <!-- HEADER: Your Name -->
-        <header>
-            <h1>Jiongrui Hu</h1>
-            <p>Personal Portfolio</p>
-        </header>
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a Machine Learning enthusiast with interests in computer vision, object detection,
+        and robotics. I enjoy building real-world AI applications using modern deep learning tools
+        and frameworks.
+      </p>
+    </div>
+  </section>
 
-        <!-- BIO SECTION -->
-        <section>
-            <h2>About Me</h2>
-            <!-- Short bio (you can edit this anytime) -->
-            <p>
-                I am passionate about machine learning and robotics, with a strong interest in building intelligent systems. 
-                I enjoy solving real-world problems using data and modern technologies.
-            </p>
-        </section>
+  <section>
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>Python</span>
+      <span>PyTorch</span>
+      <span>YOLO</span>
+      <span>OpenCV</span>
+      <span>Machine Learning</span>
+      <span>Deep Learning</span>
+      <span>Robotics</span>
+      <span>Django</span>
+    </div>
+  </section>
 
-        <!-- SKILLS SECTION -->
-        <section>
-            <h2>Skills</h2>
-            <!-- List of your skills -->
-            <ul>
-                <li>Python & Django</li>
-                <li>Deep Learning</li>
-                <li>Machine Learning</li>
-                <li>Robotics</li>
-            </ul>
-        </section>
+  <section>
+    <h2>Projects</h2>
+    <a href="https://github.com/JiongruiHu/Titanic-Capstone-Project" target="_blank" style="text-decoration: none;">
 
-        <!-- PROJECT SECTION -->
-        <section>
-            <h2>Project</h2>
-
-            <!-- Project title -->
-            <p class="project-title">Capstone Titanic</p>
-
-            <!-- Project description -->
-            <p>
-                A machine learning project that predicts passenger survival on the Titanic dataset.
-                It involves data preprocessing, feature engineering, and model building to achieve accurate predictions.
-            </p>
-        </section>
+    <div class="card">
+      <h3>Capstone Titanic Project</h3>
+      <p>
+        Built a machine learning model to predict passenger survival using classification algorithms.
+        Applied data preprocessing, feature engineering, and model evaluation techniques.
+      </p>
+      <p><strong>Tech:</strong> Python, Pandas, Scikit-learn</p>
+      <p><em>Collaborative project (team work)</em></p>
 
     </div>
+
+    <div class="card">
+      <h3>YOLO Object Detection (Example)</h3>
+      <p>
+        Developed an object detection system using YOLO for real-time inference.
+        Trained on custom datasets and evaluated performance.
+      </p>
+      <p><strong>Tech:</strong> PyTorch, OpenCV, Ultralytics YOLO</p>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: jiongrui.hu@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/JiongruiHu" target="_blank">github.com/JiongruiHu</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Jiongrui Hu</p>
+  </footer>
 
 </body>
 </html>
